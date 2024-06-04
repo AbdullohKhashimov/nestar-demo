@@ -4,6 +4,8 @@ import { CssBaseline } from "@mui/material";
 import { useState } from "react";
 import { light } from "../scss/materialTheme";
 
+import "../scss/app.scss";
+
 export default function App({ Component, pageProps }: AppProps) {
   //@ts-ignore
   const [theme, setTheme] = useState(createTheme(light));
