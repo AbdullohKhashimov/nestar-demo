@@ -19,3 +19,14 @@ export default function App({ Component, pageProps }: AppProps) {
     </ThemeProvider>
   );
 }
+
+/*
+Next js ni hosil qilayotganda App yoki Pages router tizimidan foydalansak boladi.
+
+App Router tizimi server componentlari bn togridan togri ishlash imkoniyatini beradi
+
+Pages Router tizimi esa Nextjs ni azaliy routing tizimini tashkil etgan uslub hisoblanadi.
+
+
+
+*/
