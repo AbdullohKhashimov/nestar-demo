@@ -7,6 +7,7 @@ import { light } from "../scss/materialTheme";
 import "../scss/app.scss";
 
 export default function App({ Component, pageProps }: AppProps) {
+  console.log("APP COMPONENT EXECUTED");
   //@ts-ignore
   const [theme, setTheme] = useState(createTheme(light));
 
@@ -54,7 +55,7 @@ App routing tizimi orqali Appni ichidagi har qanday component by defaul Server-s
 Note!  Server-side rendering orqali hosil bolgan mantiqda biz (hooklar) ni ishlata olmaymiz.
 
 2) Pages Router -> pages routingda ham server-side rendering imkoniyati mavjud. 
-Pages routing tizimda hammasi by defaul client-side rendering faqatgina
+Pages routing tizimda hammasi by default client-side rendering faqatgina
  _document tsx server-side rendering mehanizmni tashkil etib beradigon mantiq hisoblanadi.
 
 
@@ -64,5 +65,27 @@ Pages routing tizimda hammasi by defaul client-side rendering faqatgina
  Pagesda da joylashgan har bir componentda qaysi device bizga murojat etayotganligini aniqlaydigon mantiq kerak buladi va biz uni 
  hooklar orqali aniqlaymiz.
  3) Yetarlicha imkoniyatlar taqdim eta olmaydi Architectural Patternlar borasida
+
+ _app _document -> underscore qoyilish natijasida routing tizimga yashirin hisoblanadi.
+ _document file -> toliq serverside rendering usulida execute boladi
+
+ pages -> domain hisoblanadi
+
+ _document Private -> fayldan boshqa barcha componentlar client-side rendering holatda qurib oladi. Yani ular birinchi 
+ ozini serverda qurib olishadi va yakuniy bosqichda client-side rendering usulda shakllantrib oladi.
+
+ _app -> file ham private file hisoblanadi. lekin bu boshqa componentlar singari client-side ga dahldor component hisoblanadi.
+
+ Note!  _app ->  nextjs ni oziga dahldor bolgan fayl hisoblanib specific mantiqlarni bajaradi. Bir qator vazifalarni bajarish uchun suniy maydon
+ yaratib beradi. App orqali biz global integration larni amalga oshiramiz.
+
+ NOte! _document tsx -> toliq serverside rendering usulda ishga tushadi va u bizga SEO ni hosil qilish uchun yordamga keladi va biz 
+ document tsx ichida loyihaga tegishli bolgan meta data larni integratsiyasini hosil qilamiz
+
+ Meta Data bizga ozi nima uchun kerak? 
+
+ url ni share qilganda linkni ustida chiqadigon datalar meta data hisoblanadi. yani link haqidagi malumotlar korsatilib turishi.
+
+
 
 */

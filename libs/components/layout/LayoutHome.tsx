@@ -11,11 +11,10 @@ const withLayoutMain = (Component: any) => {
 
         <Stack id="pc-wrap">
           <Stack sx={{ background: "#81c784" }}>Header Home</Stack>
-
+          {/* // homepagedan kelayotgan containerni ozi ichiga oladi */}
           <Stack id={"main"}>
             <Component {...props} />
           </Stack>
-
           <Stack sx={{ background: "#a1887f" }}>Footer</Stack>
         </Stack>
       </>

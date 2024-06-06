@@ -1,5 +1,5 @@
 import withLayoutMain from "@/libs/components/layout/LayoutHome";
-import { Box, Container, Stack } from "@mui/material";
+import { Stack } from "@mui/material";
 import { NextPage } from "next";
 
 const Home: NextPage = () => {
@@ -25,4 +25,5 @@ const Home: NextPage = () => {
     </Stack>
   );
 };
+// withLayoutMain ga Home ni wrap qilsak oziga yutib oladi va uni biz LayoutMain filega uni joylaymiz for rendering purpose
 export default withLayoutMain(Home);
