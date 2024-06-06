@@ -1,4 +1,4 @@
-/*   RESET   */
+/* RESET */
 
 html,
 body,
@@ -136,12 +136,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-input[type="text"]::-ms-clear
-  input[type="text"]::-ms-reveal
-  input[type="password"]::-ms-clear
-  input[type="password"]::-ms-reveal {
+input[type="text"]::-ms-clear,
+input[type="text"]::-ms-reveal,
+input[type="password"]::-ms-clear,
+input[type="password"]::-ms-reveal {
   display: none;
   width: 0;
+  height: 0;
 }
 textarea:focus {
   outline: 0;
