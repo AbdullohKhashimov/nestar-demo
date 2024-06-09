@@ -1,6 +1,6 @@
 import { Stack } from "@mui/material";
 import Head from "next/head";
-import HeaderFilter from "../homepage.tsx/HeaderFilter";
+import HeaderFilter from "../homepage/HeaderFilter";
 import Top from "@/libs/Top";
 import Footer from "@/libs/Footer";
 
