@@ -5,6 +5,7 @@ import { useState } from "react";
 import { light } from "../scss/materialTheme";
 
 import "../scss/app.scss";
+import "../scss/pc/main.scss";
 
 export default function App({ Component, pageProps }: AppProps) {
   console.log("APP COMPONENT EXECUTED");
