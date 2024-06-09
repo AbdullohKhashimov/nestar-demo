@@ -1,8 +1,8 @@
 import { Stack } from "@mui/material";
 import Head from "next/head";
-import Top from "../Top";
-import Footer from "../Footer";
-import HeaderFilter from "@/libs/homepage.tsx/HeaderFilter";
+import HeaderFilter from "../homepage.tsx/HeaderFilter";
+import Top from "@/libs/Top";
+import Footer from "@/libs/Footer";
 
 const withLayoutMain = (Component: any) => {
   return (props: any) => {
@@ -11,7 +11,6 @@ const withLayoutMain = (Component: any) => {
         <Head>
           <title>Nestar</title>
         </Head>
-
         <Stack id="pc-wrap">
           <Stack id={"top"}>
             <Top />
@@ -23,7 +22,6 @@ const withLayoutMain = (Component: any) => {
             </Stack>
           </Stack>
 
-          {/* // homepagedan kelayotgan containerni ozi ichiga oladi */}
           <Stack id={"main"}>
             <Component {...props} />
           </Stack>
