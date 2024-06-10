@@ -22,12 +22,12 @@ const TrendPropertyCard = () => {
             fontWeight: "600",
           }}
         >
-          $10
+          $430000
         </div>
       </Box>
       <Box className={"info"}>
-        <strong className={"title"}>Run Will Buildings</strong>
-        <p className={"desc"}>Seoul Gangnam Apartments</p>
+        <strong className={"title"}>Kingston Buildings</strong>
+        <p className={"desc"}>Seoul Yeouido Villas</p>
         <div className={"options"}>
           <div>
             <img src="/img/icons/bed.svg" alt="" />

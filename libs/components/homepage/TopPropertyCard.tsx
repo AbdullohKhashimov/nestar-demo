@@ -27,7 +27,7 @@ const TopPropertyCard = () => {
             fontWeight: "600",
           }}
         >
-          $420000
+          $320000
         </div>
       </Box>
       <Box className={"info"}>

@@ -17,7 +17,7 @@ const PopularPropertyCard = () => {
           <img src="/img/icons/electricity.svg" alt="" />
           <span>top</span>
         </div>
-        <div className={"price"}>$520000</div>
+        <div className={"price"}>$200000</div>
       </Box>
       <Box className={"info"}>
         <strong className={"title"}>Busan City Hall Apartments</strong>
