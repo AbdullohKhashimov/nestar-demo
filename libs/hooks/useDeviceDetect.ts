@@ -10,8 +10,8 @@ const useDeviceDetect = (): any => {
         userAgent
       );
     setDevice(isMobile ? "mobile" : "desktop");
-    return device;
   }, [device]);
+  return device;
 };
 
 export default useDeviceDetect;
