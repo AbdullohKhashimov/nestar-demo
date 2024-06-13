@@ -5,6 +5,8 @@ import type { AppProps } from "next/app";
 import { useState } from "react";
 import "../scss/app.scss";
 import "../scss/pc/main.scss";
+import { ApolloProvider } from "@apollo/client";
+import client from "@/apollo/client";
 
 export default function App({ Component, pageProps }: AppProps) {
   // @ts-ignore
@@ -12,10 +14,12 @@ export default function App({ Component, pageProps }: AppProps) {
 
   // Socket.io, Redux, Mui
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <ApolloProvider client={client}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </ApolloProvider>
   );
 }
 
